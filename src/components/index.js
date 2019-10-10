@@ -17,6 +17,8 @@ import loadDivider from './Divider';
 import loadSpacer from './Spacer';
 import loadNavBar from './NavBar';
 import loadNavBarLink from './NavBarLink';
+import loadCarousel from './Carousel';
+import loadCarouselImage from './CarouselImage';
 
 export const isComponentType = type => (el) => el.tagName === type.toUpperCase();
 
@@ -279,4 +281,6 @@ export default (editor, opt = {}) => {
   loadSpacer(editor, compOpts);
   loadNavBar(editor, compOpts);
   loadNavBarLink(editor, compOpts);
+  loadCarousel(editor, compOpts);
+  loadCarouselImage(editor, compOpts);
 };
